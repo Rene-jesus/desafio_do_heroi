@@ -13,6 +13,8 @@ def classificar_heroi(nome: str, xp: int) -> str:
         nivel = "Ascendente"
     elif xp <= 10000:
         nivel = "Imortal"
+    else:
+        nivel = "Radiante"
     return f"O Herói {nome} está no nível {nivel}" 
 try: 
     nome_heroi = input("Digite o nome do herói:")
